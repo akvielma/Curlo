@@ -1,0 +1,23 @@
+@mixin miImagen ($imagen){
+	@if $imagen == curl {
+		background-image: url('../media/miPortada.jpg');
+	} @else if $imagen == afro {
+		background-image: url('../media/miPortadaDos.jpg');
+	} @else{
+		background-image: none;
+	}
+}
+@mixin miImagen($imagen){
+	background-image: url($imagen);
+}
+.imagenCurl{
+	min-height: 750px;
+	background-size: cover;
+	background-position: center;
+	@include miImagen('../media/miPortada.jpg');
+}
+
+.imagenAfro{
+	@extend .imagenCurl;
+	@include miImagen('../media/miPortadaDos.jpg');
+}

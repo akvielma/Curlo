@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Atención al cliente de la tienda Curlo</title>
+	<meta charset=utf/8>
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<meta name="description" content="sección de contacto de la página web">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div>
+        <div class="header">
+          <img class="header__logo" src="media/LOGO.jpg" alt="curlo">
+          <ul class="header__nav">
+            <li class="header__nav"><a class="nav-link" href="index.html">Home</a></li>
+            <li class= "header__nav"><a class="nav-link" href="mision.html">Nuestra mision</a></li>
+            <li class= "header__nav"><a class="nav-link" href="productos.html" target="blank">Productos</a></li>
+            <li class= "header__nav"><a class="nav-link" href="contacto.html"target="blank">Contacto</a></li>
+            <li class= "header__nav"><a class="nav-link" href="politicas.html">Devoluciones</a></li>
+          </ul>
+        </div>
+    </div>
+	<div class="contenedorContacto">
+		<h2>Aseorate con nosotros</h2>
+		<p>Si estas comenzando a utilizar productos para gozar de tu cabello natural y no sabes que comprar completa el siguiente formulario para que podamos asesorarte</p>
+	</div>
+	<div class="contenedorContacto">
+		<h1 id="contacto">Contactanos</h1>
+		<p class="contactoLista">Telefono</p>
+		<p class="contactoLista">Correo</p>
+		<p class="contactoLista">Instagram</p>
+	</div>
+	<div class="contenedorContacto">
+		<form action="recibe.html" method="POST" enctype="multipart/form-data">
+			<label>Nombre: </label>
+			<input type="text" name="nombre" placeholder="Ingresa tu nombre">
+			<label>Apellido: </label>
+			<input type="text" name="apellido" placeholder="Ingresa tu apellido">
+			<label>Correo electronico: </label>
+			<input type="email" name="email" placeholder="Ingresa tu correo">
+			<br>
+			<label>Deseo seguir recibiendo informacion sobre los nuevos productos: Claro que sí</label>
+			<input type="checkbox" name="decision" value="si">
+			<label>No, gracias:</label>
+			<input type="checkbox" name="decision" value="no">
+			<input class="botones" type="submit" name="sube_form" value="Enviar"/>
+			<input class="botones" type="reset" name="reset" value="Borrar todo"/>
+		</form>
+     <div class="footer">
+        <h2 class="footer__texto"> Contáctanos al info@curlo.com</h2>
+        <p class="footer__disclamer"> Todos los derechos reservados </p>
+    </div>
+	</div>
+</body>
+</html>

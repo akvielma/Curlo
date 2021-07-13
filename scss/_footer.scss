@@ -1,0 +1,20 @@
+.footer{
+	background-color: #DDBEA9;
+	position: fixed;
+	width: 100%;
+	text-align: center;
+		.footer__texto{
+		color: $texto-primario;
+		a{
+		color: $texto-primario;
+		text-align: center;
+		width: 100%;
+		}
+	}
+	.footer__disclamer{
+		text-color: red;
+		font-size: 0.8rem;
+		text-align: center;
+		width: 100%;
+	}
+}
